@@ -42,8 +42,3 @@ Route::controller(App\Http\Controllers\EmployeeController::class)->group(functio
     Route::delete('/delete-employee/{employee_id}', 'destroy');
 
 });
-
-Route::controller(ImageController::class)->group(function(){
-    Route::get('image-upload','index');
-    Route::post('image-upload','imageUpload')->name('image.store');
-});
